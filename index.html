@@ -1,0 +1,21 @@
+<style>
+  body{ 
+    font-family: Arial, sans-serif; 
+    margin: 0;  
+  }
+  button{
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 50%;
+  }
+</style>
+<button style="left:0;background-color:#ff3a28;">0</button>
+<button style="right:0;background-color:#3281ff;">0</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $('button').on('click', function(){
+    var n = Integer.parseInt($(this).text());
+    $(this).text(n+1);
+  })
+</script>

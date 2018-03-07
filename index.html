@@ -23,7 +23,9 @@
 <button style="top:50%;right:0;background-color:#efbe0b;">0</button>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+  var m = prompt("Enter the point modifier (leave blank for 1)");
+  var mod = parseInt(m) || 1;
   $('button').on('click', function(){
-    $(this).text(parseInt($(this).text())+1);
+    $(this).text(parseInt($(this).text())+mod);
   })
 </script>

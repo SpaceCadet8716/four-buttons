@@ -14,8 +14,10 @@
 <button style="right:0;background-color:#3281ff;">0</button>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+  var m = prompt("Enter the point modifier (leave blank for 1)");
+  var mod = parseInt(m) || 1;
   $('button').on('click', function(){
-    var n = Integer.parseInt($(this).text());
-    $(this).text(n+1);
+    var n = parseInt($(this).text());
+    $(this).text(n+mod);
   })
 </script>

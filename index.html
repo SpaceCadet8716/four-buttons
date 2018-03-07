@@ -26,6 +26,7 @@
   var m = prompt("Enter the point modifier (leave blank for 1)");
   var mod = parseInt(m) || 1;
   $('button').on('mousedown', function(e){
+    e.preventDefault();
     $(this).text(parseInt($(this).text())+(e.which===1?mod:-mod));
   })
 </script>
